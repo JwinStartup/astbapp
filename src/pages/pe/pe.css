@@ -1,0 +1,75 @@
+.HautBp{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    background: gainsboro;
+}
+.droitbsp{
+    flex: 0.3;
+}
+.gaucheB{
+  margin: 0px 10px 10px;
+    height: 730px;
+    overflow-y: scroll;
+}
+
+input{
+    border: none;
+    outline: none;
+    border-bottom: dashed 1px;
+  }
+  table {
+    border: solid 1px;
+  }
+  
+  table td{
+    border: solid 1px;
+    padding: 5px;
+
+  }
+  table th{
+    border: solid 1px;
+  }
+  table input{
+    outline: none;
+    border: none;
+  }
+  .tableau{
+    width: 90%;
+  }
+  .presntation{
+    display: flex;
+    justify-content: space-around;
+  }
+  .nom{
+    width: 70%;
+  }
+  .photo input{
+    border: none;
+    border:solid 2px;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.envoyer{
+  display: flex;
+  justify-content: center;
+}
+
+ /* .envoyer button {
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 20px;
+    border: solid 1px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    transform: scale(0.9);
+  }*/
+  
+  

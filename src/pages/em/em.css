@@ -1,0 +1,77 @@
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containers {
+  background-color: white;
+ width: 100%;
+margin:10px;
+}
+ul table{
+  width: 80%;
+  height: 20vw;
+
+
+}
+ul table input{
+  width: 100%;
+}
+input {
+  outline: none;
+  width: 20%;
+  border: none;
+  border-bottom: dashed 1px;
+  text-align: center;
+  font-size: 18px;
+}
+textarea {
+  outline: none;
+  width: 696px;
+ height: 151px;
+ resize:none;
+}
+ul{
+  text-align: start;
+}
+
+li {
+  font-size: 18px;
+  line-height: 20px;
+  text-align: start;
+}
+p {
+  font-size: 18px;
+  text-align: start;
+  margin:5px;
+}
+.envoyer {
+  display: flex;
+  justify-content: center;
+}
+/*
+.envoyer button {
+  width: 60%;
+  border-radius: 10px;
+  font-weight: bolder;
+  padding: 20px;
+  border: solid 1px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}*/
+
+.envoyer button:hover {
+  background:blue
+}
+
+
+marquee {
+  background-color: gray;
+  color: white;
+}
+span input{
+  width: 10%;
+}

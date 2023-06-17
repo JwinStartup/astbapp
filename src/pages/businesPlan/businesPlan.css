@@ -1,0 +1,13 @@
+.HautBp{
+    display: flex;
+    flex: 1;
+    background: gainsboro;
+}
+.droitbsp{
+    flex: 0.3;
+}
+.gaucheB{
+    margin: 0px 10px 10px;
+    height: 551px;
+    overflow-y: scroll;
+}

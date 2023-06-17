@@ -1,0 +1,54 @@
+.fmenu{ background:#ffffff;
+    border-radius: 30px;
+    margin: 10px;
+    width: 350px;
+    padding: 0px 0px 10px 0px;    
+}
+
+.fmenu p{
+    font-size: 18px;
+    padding: 19px 0px 0px 25px;
+    text-align: start;
+}
+.fmenu ul{
+    list-style: none;
+    text-align: initial;
+    margin: 0px;
+    font-size: 17px;
+    width: 307px;
+}
+/*
+.fmenu ul  .desactive{
+    margin: 5px;
+    height: 40px;
+    text-align: start;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 17px;
+}
+.fmenu ul  li:hover {
+   
+    padding:3px;
+    background: #22acf47a;
+    height: 35px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arima Medium 500";
+    font-size: 19px;
+}
+.fmenu ul .active{
+    padding:3px;
+    background: #22acf47a;
+    height: 35px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arima Medium 500";
+    font-size: 19px;
+}*/

@@ -1,0 +1,47 @@
+.ItemSousEltBp{
+    display: flex;
+    flex-direction: row;
+}
+.ItemSousEltBpHautGauche{
+    display: flex;
+    flex-direction: row;
+}
+.ItemSousEltBp{
+    height: 250px;
+    background: white;
+    margin: 5px;
+    border-radius: 16px 16px 0px 0px;
+    width: fit-content;
+}
+.ItemSousEltBpHaut{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    justify-content: space-between;
+    background:white;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px #a7a7a7;
+}
+.ItemSousEltBpHautDroite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ItemBpDesc{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 0 0 5px;
+font-size: 20px;
+}
+.ItemBpNbr{border-radius: 100%;
+width: 30px;
+height: 30px;
+background: gainsboro;
+font-size: 20px;
+display: flex;
+justify-content: center;
+align-items: center;}

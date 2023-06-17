@@ -1,0 +1,125 @@
+.Home{
+    height: 100%;
+    background: url(../../Assets/BGSVG/waveOriginal.png) no-repeat ;
+    background-size: cover;
+    padding-bottom :14px;
+    color: white;
+    margin: 0px;
+  }
+  a{
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .container{
+    text-align: center;
+    width: 60%;
+    margin: 100px;
+  }
+  .container h1{
+    font-size: 2.5em;
+    z-index: 2;
+  font-family: "Montserrat";
+  }
+  .container p{
+    font-size: 1.3em;
+    line-height: 1.4em;
+  }
+  .container .button1 ,.container .button2,.container .button3 {
+  width: 300px;
+  height: 50px;
+  border: none;
+  font-size: 1.2em;
+  border-radius: 40px;
+  margin: 5px;
+  cursor: pointer;
+  
+  }
+  .container div{
+  width: 750px;
+  height: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  
+  }
+  .button1{
+    background-color: rgba(255, 150, 105, 1);
+    color: black;
+  }
+  .button2{
+    background-color: white;
+    color: rgba(255, 150, 105, 1);
+  }
+   .button3{
+    background-color: rgb(31, 174, 240);
+    color: rgb(255, 255, 255);
+  }
+  
+  
+  nav ul li a{
+    color: black;
+    padding: 0 20px;
+  }
+  #logo{
+    font-size: 2em;
+  }
+  .droitCube{
+    position: absolute;
+    z-index: 2;
+    top:65%;
+    right: 20%;
+    width: 50px;
+  }
+  .droitCube1{
+    position: absolute;
+    z-index: 2;
+    top:65%;
+    right: 15%;
+    width: 50px;
+  }
+  .droitCube2{
+    position: absolute;
+    z-index: 2;
+    top:65%;
+    right: 10%;
+    width: 50px;
+  }
+  .gauche {
+    position: absolute;
+    top:30%;
+    width: 200px;
+  }
+  .droit{
+    position: absolute;
+    top:70%;
+    right: 3%;
+    width: 400px;
+  }
+  .btnCon{
+  
+    
+  }
+  .gaucheDforme{
+    position: absolute;
+    width: 1291px;
+    left: -5%;
+    top: 10%;
+    transform:scale(0.85);
+    height: 364px;
+  }
+  .Home .btnCon a{
+ 
+  
+  }
+  .gaucheR{
+    position: absolute;
+    z-index: 1;
+    top:52%;
+    left: 3%;
+    width: 50px;
+  }
+  p{
+    margin: 0px;
+  }

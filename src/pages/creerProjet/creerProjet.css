@@ -1,0 +1,50 @@
+.ProjetByC{
+    height: 100%;
+    background: url(../../Assets/BGSVG/waveRest.png) no-repeat ;
+    background-size: cover;
+    padding-bottom :765px;
+    margin: 0px;
+}
+
+.proAvant{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index:3;
+    position: absolute;
+    top:125px
+}
+.projDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+ 
+
+}
+
+.divFo .hautinscriptionFor{
+    margin-bottom: 15px;
+}
+.enBasCree{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divFo{
+    background-color: #9ccbf2;
+    border-radius: 27px;
+    height: 300px;
+    padding: 20px;
+}
+.projDiv .creerButton{
+width: 415px;
+}
+.projDiv hr{
+    width: 430px;
+   
+    
+}

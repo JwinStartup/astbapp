@@ -1,0 +1,83 @@
+body {
+  background-color:  rgb(213, 212, 212);
+  
+}
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 50px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 10px 6px 6px white;
+}
+input {
+  outline: none;
+  border: none;
+  border-bottom: dashed 1px;
+  text-align: center;
+  font-size: 18px;
+}
+
+table th {
+  border: solid 3px;
+}
+            
+table {
+  background: rgb(161, 198, 199);
+  height: 60vh;
+  width: 90%;
+  border-collapse: collapse;
+}
+table td {
+}
+table .td {
+  background: rgb(186, 221, 223);
+}
+table input{
+    width: 70px;
+}
+span input{
+  border: none;
+}
+.observe{
+    border: solid 2px;
+    width: 90%;
+}
+.observe textarea{
+    border: none;
+    outline: none;
+}
+.envoyer{
+  display: flex;
+  justify-content: center;
+}
+
+.envoyer button {
+  width: 60%;
+  margin: auto;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: bolder;
+  padding: 20px;
+  border: solid 1px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.envoyer button:hover {
+  transform: scale(1);
+  animation: input 1s infinite alternate;
+  transition: 5s;
+  cursor: pointer;
+  user-select: none;
+}
+@keyframes input {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}

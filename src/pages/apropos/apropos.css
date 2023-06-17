@@ -1,0 +1,61 @@
+.logoAs{
+    width: 60px;
+    margin: 5px;
+    padding: 0px 5px 0px;
+}
+.aproposPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+   
+}
+.numLieuABABI,.numLieuBOUAKE,.numLieuKORO,.numLieuYAKRO {
+    display: flex;
+    flex-direction: column;
+    margin:15px;
+}
+ 
+.localLieu{
+    display: flex;
+}
+ .localLieu svg{
+    font-size: 70px;
+    color: red;
+}
+ .localLieu p{
+    text-align: justify;
+}
+.localLieuP{
+    display: flex;
+    flex-direction:column;
+}
+ .localLieuP svg{
+    font-size: 20px;
+    color: green;
+}
+ .localLieuP p{
+    text-align: justify;
+}
+.aproposPage p{
+    width: 200px;
+}
+.numLieu{
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 905px;
+    justify-content: center;
+}
+.introLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     width: 800px;
+     
+}
+.introLogo div{
+    text-align: start;
+    align-content: center;
+}

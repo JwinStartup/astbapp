@@ -1,0 +1,47 @@
+
+ 
+  p {
+    font-size: 18px;
+  }
+  table th {
+    border: solid 3px;
+  }
+              
+  table {
+    border: solid 2px;
+    height: 60vh;
+    width: 90%;
+    border-collapse: collapse;
+  }
+  table td {
+    border: solid 2px;
+  }
+  table tr {
+    border: solid 2px;
+  }
+  input {
+    width: 80%;
+    border: none;
+    outline: none;
+    border-bottom: dashed 1px;
+    background-color: rgb(217, 217, 223);
+    background-color: white;
+  }
+  
+  .envoyer input {
+    width: 60%;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 20px;
+    border: solid 1px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    transform: scale(0.9);
+  }
+  
+  .envoyer input:hover {
+  }
+
+  

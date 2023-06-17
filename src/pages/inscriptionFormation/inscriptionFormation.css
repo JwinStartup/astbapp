@@ -1,0 +1,135 @@
+ .basinscriptionForm {
+   box-sizing: border-box;
+    height: 450px;
+    border-radius: 27px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.formFormation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.suivantinF{
+    width: 300px;
+    height: 50px;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+.nomForm{
+    margin: 0px 5px 0px;
+}
+.nomForm p{
+    text-align: start;
+}
+.formFormation .centerFormation{
+    background-color: #9ccbf2;
+    width: 700px;
+    border-radius: 27px;
+    height: 590px;
+
+}
+.basinscriptionForm input{
+    box-sizing: border-box;
+    width: 300px;
+    height: 35px;
+    border-radius: 7px;
+    border: none;
+}
+ .hr{
+    margin: 0px;
+    width: 600px;
+    border: 1px solid white ;
+    }
+ .h2{
+    margin: 10px 0px;
+    color: white;
+    }
+    .hautinscriptionFor
+    {
+        text-align: end;
+       margin: 3px 10px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .formFormation{
+    display: flex;
+    flex-direction: column;
+    }
+    .nom_prenom,.lieu_situation,.contact,.niveau_profession{
+      display: flex;
+      margin: 7px;
+
+    }
+    .nomFormSelect{
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+}
+select{
+    border: none;
+    font-size:18px;
+    text-align: center;
+}
+.inscriptionForm svg{
+    color: #000000;
+    fill-opacity: 0.6;
+}
+.bsFill{
+    position: relative;
+    z-index: 2;
+    right: 28px;
+    fill-opacity: 1;
+    color: red;
+    top: -8px;
+}
+.detailInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.detailPeople{
+display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px;
+}
+   .infoPeople{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5px;
+    color: #454444;
+    font-size: 18px;}
+    .cfc{
+        margin: 5px;
+        height: 134px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cfc p{font-size: 25px;}
+    .cfc select{width: 300px;
+        height: 35px;
+        border-radius: 10px;
+        font-size: 21px;}
+        .divSui{
+            height: 150px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+
+        }
+        .suivantinF{
+          background-color:  rgba(255, 150, 105, 1);
+
+        }

@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+.btnTable{
+    padding: 13px;
+    border: none;
+    border-radius: 66px;
+    margin: 5px;
+    box-shadow: 2px 2px white;
+}
+.btnTable:hover{
+   color: white;
+   background: rgba(34, 172, 244, 0.48);
+}

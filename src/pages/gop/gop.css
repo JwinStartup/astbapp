@@ -1,0 +1,114 @@
+
+  p {
+    font-size: 18px;
+  }
+  table th {
+    border: solid 3px;
+    padding: 10px;
+  }
+  table {
+    border: solid 2px;
+    border-collapse: collapse;
+  }
+  table td {
+    border: solid 2px;
+  }
+  table tr {
+    border: solid 2px;
+  }
+  textarea{
+    width: 100%;
+    height: 100%;
+  }
+  .span input {
+    width: 50%;
+    outline: none;
+    border: none;
+    border-bottom: dashed 1px;
+    text-align: center;
+    font-size: 18px;
+  }
+  textarea {
+    outline: none;
+    width: auto;
+    height: auto;
+  }
+  table textarea {
+    border:none;
+    width: auto;
+    height: auto;
+   }
+  .table2 th {
+    padding: 0px;
+  }
+  .table2 td {
+    padding: 20px;
+  }
+  .table2 input{
+    width: 20%;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+  }
+  .organigramme{
+    width: 90%;
+  }
+  .organigramme span{
+    border: solid 1px;
+    width: 25%;
+    height: 100px;
+    border-radius: 15px;
+  
+  }
+  .service1{
+  display: flex;
+  justify-content: center;
+  padding-top:10px ;
+  }
+  .service2{
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  .service3{
+  display: flex;
+  justify-content: space-between;
+  }
+  .service4{
+    display: flex;
+    justify-content: space-between;
+    }
+  .organigramme span input{
+    margin: auto;
+    display: flex;
+    width: 80px;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-bottom: dashed 1px;
+    text-align: center;
+    font-size: 18px;
+  
+  }
+  .envoyer input {
+    width: 60%;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 20px;
+    border: solid 1px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    transform: scale(0.9);
+  }
+  
+  .envoyer input:hover {
+    transform: scale(1);
+    animation: input 1s infinite alternate;
+    transition: 5s;
+    cursor: pointer;
+    user-select: none;
+  }
+ 

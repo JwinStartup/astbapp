@@ -1,0 +1,12 @@
+.projetPage{
+    display: flex;
+    justify-content: center;
+    height: 540px;
+    align-items: center;
+}
+.projetCenter{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}

@@ -1,0 +1,253 @@
+[{"id":1,
+"q":"J’aime faire des choses qui donnent rapidement des résultats",
+"r":[
+    {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":0},
+    {"reponse":"En desaccord","points":0}
+]
+},
+{"id":2,
+"q":"Je préfère travailler avec des amis plutôt qu’avec des spécialistes plus compétents, mais que je ne connaitrais pas ",
+"r":[
+     {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":1},
+    {"reponse":"En desaccord","points":1}
+]
+},
+{"id":3,
+"q":"Je suis plutôt effrayé par les difficultés et la complexité des situations ",
+"r":[
+     {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"D’accord","points":0},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":1},
+    {"reponse":"En desaccord","points":1}
+]
+},
+{"id":4,
+"q":"Je me perçois en tant que généraliste (polyvalent) plutôt que spécialiste  ",
+"r":[
+     {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":0},
+    {"reponse":"En desaccord","points":0}
+]
+},
+{"id":5,
+"q":"Pour moi, les échecs sont des occasions d’apprendre ",
+"r":[
+     {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":0},
+    {"reponse":"En desaccord","points":0}
+]
+},
+{"id":6,
+"q":"Derrière toute réussite, il y a un chanceux ",
+"r":[
+     {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"D’accord","points":0},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":1},
+    {"reponse":"En desaccord","points":1}
+]
+},
+{"id":7,
+"q":"Je suis un touche-à-tout et j’aime mettre la main à la pate ",
+"r":[
+     {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":0},
+    {"reponse":"En desaccord","points":0}
+]
+},
+{"id":8,
+"q":"Je préfère laisser les responsabilités à ceux qui sont mus par la gloire",
+"r":[
+     {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"D’accord","points":0},
+    {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"Un peu d’accord","points":1},
+    {"reponse":"En desaccord","points":0}
+]
+},
+{"id":9,
+"q":"Je peux me mettre dans la peau de mes interlocuteurs, voir comment ils pensent",
+"r":[
+     {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":0},
+    {"reponse":"En desaccord","points":0}
+]
+},
+{"id":10,
+"q":"Je suis constamment à l’affut des occasions d’affaires qui pourraient surgir inopinément",
+"r":[
+     {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":0},
+    {"reponse":"En desaccord","points":0}
+]
+}
+, 
+{"id":11,
+"q":"Je sens que mon potentiel et mon énergie sont actuellement sous-exploités",
+"r":[
+     {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":0},
+    {"reponse":"En desaccord","points":0}
+]
+}
+, 
+{"id":12,
+"q":"Je n’aimerais pas mettre en jeu ma position sociale en prenant des risques indus",
+"r":[
+     {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":1},
+    {"reponse":"En desaccord","points":1}
+]
+},
+{"id":13,
+"q":"Dans ma jeunesse, j’ai eu des activités qui m’ont fait gagner des sous, par exemple distribuer des journaux ou des circulaires",
+"r":[
+     {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":0},
+    {"reponse":"En desaccord","points":0}
+]
+},
+{"id":14,
+"q":"J’ai toujours tendance à rechercher l’approbation de mon entourage",
+"r":[
+     {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"D’accord","points":0},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":1},
+    {"reponse":"En desaccord","points":1}
+]}
+, 
+{"id":15,
+"q":"J’aime me surpasser constamment",
+"r":[
+     {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":0},
+    {"reponse":"En desaccord","points":0}
+]
+},
+{"id":16,
+"q":"J’aime rester inoccupé ou rêveur à certains moments de la journée.",
+"r":[
+    {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":0},
+    {"reponse":"En desaccord","points":0}
+]
+},
+
+{"id":17,
+"q":"Je suis en général très intéressé par l’incertitude et l’ambiguïté de certaines situations" ,
+"r":[
+     {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"D’accord","points":0},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":1},
+    {"reponse":"En desaccord","points":1}
+]
+},
+{"id":18,
+"q":"Je constate que j’ai tendance à assumer la responsabilité de beaucoup de choses dans la vie",
+"r":[
+     {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":0},
+    {"reponse":"En desaccord","points":0}
+]}
+, 
+{"id":19,
+"q":"Pour moi, les changements sont porteurs d’occasions à saisir " ,
+"r":[
+     {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":0},
+    {"reponse":"En desaccord","points":0}
+]
+},
+{"id":20,
+"q":"Ma façon de travailler est rigoureuse, si bien que l’intuition y trouve peu de place  ",
+"r":[
+     {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"D’accord","points":0},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":1},
+    {"reponse":"En desaccord","points":1}
+]
+},
+{"id":21,
+"q":"Je ne suis pas constamment à la recherche d’importants défis à relever " ,
+"r":[
+     {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"D’accord","points":0},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":1},
+    {"reponse":"En desaccord","points":1}
+]
+},
+{"id":22,
+"q":"Je me considère comme un gros travailleur ",
+"r":[
+     {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":0},
+    {"reponse":"En desaccord","points":0}
+]
+},
+{"id":23,
+"q":"Je suis de ceux qui prennent des risques calculés ",
+"r":[
+     {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":0},
+    {"reponse":"En desaccord","points":0}
+]
+},
+{"id":24,
+"q":"Les changements ne me rebutent pas et je sais m’y adapter",
+"r":[
+     {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"D’accord","points":0},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":1},
+    {"reponse":"En desaccord","points":1}
+]}
+, 
+{"id":25,
+"q":"Je suis un optimiste",
+"r":[
+     {"reponse":"Totalement d'accord","points":1},
+    {"reponse":"D’accord","points":1},
+    {"reponse":"Totalement d'accord","points":0},
+    {"reponse":"Un peu d’accord","points":0},
+    {"reponse":"En desaccord","points":0}
+]
+}]

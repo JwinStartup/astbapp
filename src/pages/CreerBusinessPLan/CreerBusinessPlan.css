@@ -1,0 +1,11 @@
+.btnStyle:hover{
+    background-color: white;
+}
+
+.ProjetById{
+    height: 100%;
+    background: url(../../Assets/BGSVG/waveRest.png) no-repeat ;
+    background-size: cover;
+    padding-bottom :740px;
+    margin: 0px;
+}
