@@ -70,7 +70,7 @@ function createExtraActions() {
     function login() {
         return createAsyncThunk(
             `${name}/login`,
-            async ({ email, password }) => await fetchWrapper.post(`http://localhost:8080/api/users/connexion`, { email, password})
+            async ({ email, password }) => await fetchWrapper.post(`https://astrainingbusiness-crud.onrender.com/api/users/connexion`, { email, password})
         );
     }
 }
