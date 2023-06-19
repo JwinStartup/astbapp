@@ -2,7 +2,7 @@
 const { estAuth } = require('../Enchaineur/est-auth.js')
 const Projet = require('../models/projet.js')
 const Utilisateur = require('../models/user')
-const BusinessPlan = require('../models/businessplan')
+const BusinessPlan = require('../models/businessPLan')
 const httpContext= require('express-http-context')
 
 
