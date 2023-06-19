@@ -1,6 +1,6 @@
 'use strict'
 const Presentprojet = require('../models/presentprojet.js')
-const BusinessPlan = require('../models/businessplan')
+const BusinessPlan = require('../models/businessPLan')
 const projet = require('../models/projet.js')
 const realisation = require('../models/realisation.js')
 const autrePlan = require('../models/autrePlan')
