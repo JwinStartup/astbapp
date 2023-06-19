@@ -1,0 +1,100 @@
+const mongoose = require ('mongoose')
+const Schema = mongoose.Schema
+var presentProjetSchema = new Schema({
+    nom :{
+        type:String
+    },
+    le :{
+        type:String
+    },
+    pays :{
+        type:String
+    },
+    ville:{
+        type:String
+    },
+    autrelieu:{
+        type:String
+    },
+    etatespace:{
+        type:String
+    },
+    dimension:
+        {
+            type:String
+        }
+    ,
+    raisons:{
+        type:String
+    },
+    besoins:{
+        type:String
+    },
+    objectifcourtterme:{
+        type:String
+    },
+    objectifmoyenterme:{
+        type:String
+    },
+    objectiflongterme:{
+        type:String
+    },
+    clientel:{
+        type:String
+    },
+    serviceproduit:{
+        type:String
+    },
+    avantageCon:{type:String},
+    avantage:{
+        type:String
+    },
+    model:{
+        type:String
+    },
+   contrainte:{
+    type:String
+   },
+   formejuridique:{
+    type:String
+   },
+   proprietaire:{
+    type:String
+   },
+   associe:[{ 
+    type:Schema.Types.ObjectId,
+    ref:'Associe'
+    }],
+    plan_economique:{
+    type:String
+   },
+   plansocial:{
+    type:String
+   },
+   planpersonnel:{
+    type:String
+   },
+   autreplan:[{ 
+   type:Schema.Types.ObjectId,
+   ref:'Autreplan'
+   }
+   ],
+   realisation:[
+    { 
+        type:Schema.Types.ObjectId,
+        ref:'Realisation'
+        }
+   ],
+businessPLan:{
+    type:Schema.Types.ObjectId,
+    ref:'BusinessPlan'
+},
+creerPar:{
+    type:Schema.Types.ObjectId,
+    ref:'User'
+},
+
+},
+);
+
+module.exports=mongoose.model('PresentProjet',presentProjetSchema)

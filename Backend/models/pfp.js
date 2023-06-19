@@ -1,0 +1,586 @@
+const mongoose = require ('mongoose')
+const Schema = mongoose.Schema
+var previsionFinanciereSchema = new Schema({
+    cout_total_besoin_transport_course_demarrage:{type:String},
+    cout_total_appel_telephonique_demarrage:{type:String},
+    cout_total_besoin_formalite_administrative:{type:String},
+    cout_aquisition_amenagement_local:{type:String},
+    cout_total_besoin_equipement_materiel:{type:String},
+    cout_total_besoin_fonds_roulement:{type:String},
+    cout_total_autres_besoin_divers_demarrage:{type:String},
+    cout_total_projet:{type:String},
+    mois_seul_rentabilite:{type:String},
+    annee_de_rentabilite:{type:String},
+    chiffre_d_affaire_annuel:{type:String},
+    
+    nom_produitOne:{type:String},
+        
+        prix_produitOne:{
+            mois1:{type:String},
+            mois2:{type:String},
+            mois3:{type:String},
+            mois4:{type:String},
+            mois5:{type:String},
+            mois6:{type:String},
+            mois7:{type:String},
+            mois8:{type:String},
+            mois9:{type:String},
+            mois10:{type:String},
+            mois11:{type:String},
+            mois12:{type:String}
+        },
+        total_produitOne:{
+            mois1:{type:String},
+            mois2:{type:String},
+            mois3:{type:String},
+            mois4:{type:String},
+            mois5:{type:String},
+            mois6:{type:String},
+            mois7:{type:String},
+            mois8:{type:String},
+            mois9:{type:String},
+            mois10:{type:String},
+            mois11:{type:String},
+            mois12:{type:String}
+        },
+        quantite_produitOne:{
+            mois1:{type:String},
+            mois2:{type:String},
+            mois3:{type:String},
+            mois4:{type:String},
+            mois5:{type:String},
+            mois6:{type:String},
+            mois7:{type:String},
+            mois8:{type:String},
+            mois9:{type:String},
+            mois10:{type:String},
+            mois11:{type:String},
+            mois12:{type:String}
+        }
+    ,
+    
+        nom_produitThree:{type:String},
+        
+        prix_produitThree:{
+            mois1:{type:String},
+            mois2:{type:String},
+            mois3:{type:String},
+            mois4:{type:String},
+            mois5:{type:String},
+            mois6:{type:String},
+            mois7:{type:String},
+            mois8:{type:String},
+            mois9:{type:String},
+            mois10:{type:String},
+            mois11:{type:String},
+            mois12:{type:String}
+        },
+        total_produitThree:{
+            mois1:{type:String},
+            mois2:{type:String},
+            mois3:{type:String},
+            mois4:{type:String},
+            mois5:{type:String},
+            mois6:{type:String},
+            mois7:{type:String},
+            mois8:{type:String},
+            mois9:{type:String},
+            mois10:{type:String},
+            mois11:{type:String},
+            mois12:{type:String}
+        },
+        quantite_produitThree:{
+            mois1:{type:String},
+            mois2:{type:String},
+            mois3:{type:String},
+            mois4:{type:String},
+            mois5:{type:String},
+            mois6:{type:String},
+            mois7:{type:String},
+            mois8:{type:String},
+            mois9:{type:String},
+            mois10:{type:String},
+            mois11:{type:String},
+            mois12:{type:String}
+        }
+    ,
+    
+        nom_produit_produitTwo:{type:String},
+        
+        prix_produitTwo:{
+            mois1:{type:String},
+            mois2:{type:String},
+            mois3:{type:String},
+            mois4:{type:String},
+            mois5:{type:String},
+            mois6:{type:String},
+            mois7:{type:String},
+            mois8:{type:String},
+            mois9:{type:String},
+            mois10:{type:String},
+            mois11:{type:String},
+            mois12:{type:String}
+        },
+        total_produitTwo:{
+            mois1:{type:String},
+            mois2:{type:String},
+            mois3:{type:String},
+            mois4:{type:String},
+            mois5:{type:String},
+            mois6:{type:String},
+            mois7:{type:String},
+            mois8:{type:String},
+            mois9:{type:String},
+            mois10:{type:String},
+            mois11:{type:String},
+            mois12:{type:String}
+        },
+        quantite_produitTwo:{
+            mois1:{type:String},
+            mois2:{type:String},
+            mois3:{type:String},
+            mois4:{type:String},
+            mois5:{type:String},
+            mois6:{type:String},
+            mois7:{type:String},
+            mois8:{type:String},
+            mois9:{type:String},
+            mois10:{type:String},
+            mois11:{type:String},
+            mois12:{type:String}
+        }
+    ,
+    
+        nom_produitFour:{type:String},
+        
+        prix_produitFour:{
+            mois1:{type:String},
+            mois2:{type:String},
+            mois3:{type:String},
+            mois4:{type:String},
+            mois5:{type:String},
+            mois6:{type:String},
+            mois7:{type:String},
+            mois8:{type:String},
+            mois9:{type:String},
+            mois10:{type:String},
+            mois11:{type:String},
+            mois12:{type:String}
+        },
+        total_produitFour:{
+            mois1:{type:String},
+            mois2:{type:String},
+            mois3:{type:String},
+            mois4:{type:String},
+            mois5:{type:String},
+            mois6:{type:String},
+            mois7:{type:String},
+            mois8:{type:String},
+            mois9:{type:String},
+            mois10:{type:String},
+            mois11:{type:String},
+            mois12:{type:String}
+        },
+        quantite_produitFour:{
+            mois1:{type:String},
+            mois2:{type:String},
+            mois3:{type:String},
+            mois4:{type:String},
+            mois5:{type:String},
+            mois6:{type:String},
+            mois7:{type:String},
+            mois8:{type:String},
+            mois9:{type:String},
+            mois10:{type:String},
+            mois11:{type:String},
+            mois12:{type:String}
+        }
+    ,
+   
+    totalEntre:{
+            mois1:{type:String},
+            mois2:{type:String},
+            mois3:{type:String},
+            mois4:{type:String},
+            mois5:{type:String},
+            mois6:{type:String},
+            mois7:{type:String},
+            mois8:{type:String},
+            mois9:{type:String},
+            mois10:{type:String},
+            mois11:{type:String},
+            mois12:{type:String}
+
+    },
+    totalCumul:{
+       
+            mois1:{type:String},
+            mois2:{type:String},
+            mois3:{type:String},
+            mois4:{type:String},
+            mois5:{type:String},
+            mois6:{type:String},
+            mois7:{type:String},
+            mois8:{type:String},
+            mois9:{type:String},
+            mois10:{type:String},
+            mois11:{type:String},
+            mois12:{type:String}
+     
+    },
+    vente:{
+       
+            mois1:{type:String},
+            mois2:{type:String},
+            mois3:{type:String},
+            mois4:{type:String},
+            mois5:{type:String},
+            mois6:{type:String},
+            mois7:{type:String},
+            mois8:{type:String},
+            mois9:{type:String},
+            mois10:{type:String},
+            mois11:{type:String},
+            mois12:{type:String}
+      
+    },
+    amortissement:{
+       
+        mois1:{type:String},
+        mois2:{type:String},
+        mois3:{type:String},
+        mois4:{type:String},
+        mois5:{type:String},
+        mois6:{type:String},
+        mois7:{type:String},
+        mois8:{type:String},
+        mois9:{type:String},
+        mois10:{type:String},
+        mois11:{type:String},
+        mois12:{type:String}
+  
+},
+totalSorties:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+totalcumulSorties:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+autreCout:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+remboursement:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+mainOeuvre:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+matiere:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+totalCharge:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+coutFonctionement:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+achatMarchandise:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+chiffreDaffaire:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+
+coutMainDoeuvreSalaire:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+dotation:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+publiciteMarketing:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+rembousementEmp:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+resultatNet:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+venteResultat:{
+    mois1:{type:String},
+    mois2:{type:String},
+    mois3:{type:String},
+    mois4:{type:String},
+    mois5:{type:String},
+    mois6:{type:String},
+    mois7:{type:String},
+    mois8:{type:String},
+    mois9:{type:String},
+    mois10:{type:String},
+    mois11:{type:String},
+    mois12:{type:String}
+
+},
+transport:[
+       
+        {
+            type:Schema.Types.ObjectId,
+            ref:'Transport'
+        }
+    ],
+    publicite:[
+      
+        {
+            type:Schema.Types.ObjectId,
+            ref:'Publicite'
+        }
+    ],
+   loyer:[
+    {
+        type:Schema.Types.ObjectId,
+        ref:'Loyer'
+    }
+   ],
+   equipement:[
+    {
+        type:Schema.Types.ObjectId,
+        ref:'Equipement'
+    }
+   ],
+   fond_roulement:[
+    {
+        type:Schema.Types.ObjectId,
+        ref:'Fond_roulement'
+    }
+   ],
+   divers:[
+    {
+        type:Schema.Types.ObjectId,
+        ref:'Divers'
+    }
+   ],
+   communication:[
+    {
+        type:Schema.Types.ObjectId,
+        ref:'Communication'
+    }
+   ],
+   administratif:[
+    {
+        type:Schema.Types.ObjectId,
+        ref:'Administratif'
+    }
+   ],
+   interne:[
+    {
+        type:Schema.Types.ObjectId,
+        ref:'Interne'
+    }
+   ],
+  
+   salaires:[
+    {
+        type:Schema.Types.ObjectId,
+        ref:'Salaires'
+    }
+   ],
+   marchandise:[
+    {
+        type:Schema.Types.ObjectId,
+        ref:'Marchandises'
+    }
+   ],
+   externe:[
+    {
+        type:Schema.Types.ObjectId,
+        ref:'Externe'
+    }
+   ],
+   creerPar:{
+    type:Schema.Types.ObjectId,
+    ref:'User'
+   }
+},
+);
+
+module.exports=mongoose.model('PrevisionFinanciere',previsionFinanciereSchema)
