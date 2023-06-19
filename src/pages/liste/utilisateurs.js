@@ -11,7 +11,7 @@ function ListeUtilisateurs (){
   const navigate = useNavigate()
   const [users,setUsers]= useState(null)
   const getUtilisateurs= async() =>{
-     const response = await fetchWrapper.get("http://localhost:8080/api/users/liste");
+     const response = await fetchWrapper.get("https://astrainingbusiness-crud.onrender.com/api/users/liste");
      setUsers(response)
     
  }
