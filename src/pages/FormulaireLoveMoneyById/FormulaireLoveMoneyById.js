@@ -30,7 +30,7 @@ import Fmenu from '../../components/fmenu/fmenu'
     })
         const onSubmit= async d=>{
             console.log(d)
-         const response = await fetchWrapper.post("http://localhost:8080/api/loveMoney/modifie",d);
+         const response = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/loveMoney/modifie",d);
         }
 
         console.log(methods.watch())
