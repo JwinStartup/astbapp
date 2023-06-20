@@ -11,7 +11,7 @@ function DashboardProjet (){
   const navigate = useNavigate()
   const [projet,setProjet]= useState(null)
   const getProjet= async() =>{
-     const response = await fetchWrapper.get("http://localhost:8080/api/projet/liste");
+     const response = await fetchWrapper.get("https://astrainingbusiness-crud.onrender.com/api/projet/liste");
      setProjet(response)
     
  }
