@@ -30,7 +30,7 @@ const authUser = useSelector(x => x.auth)
     console.log(user._id)
     setLoading(true) 
     console.log(data)
-      const response = await axios.post("http://localhost:8080/api/users/ajout_numero",{
+      const response = await axios.post("https://astrainingbusiness-crud.onrender.com/api/users/ajout_numero",{
         id: user._id,
         numero:data.numero,
        } );
