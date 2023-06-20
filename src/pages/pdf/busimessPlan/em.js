@@ -120,7 +120,7 @@ export default function Empdf(){
 
   const {id} = useParams()
   const datating = async()=>{
-    const reponses = await fetchWrapper.get(`http://localhost:8080/api/etudeMarche/voir/${id}`)
+    const reponses = await fetchWrapper.get(`https://astrainingbusiness-crud.onrender.com/api/etudeMarche/voir/${id}`)
     if(reponses){
           setData(reponses)
           console.log(reponses)
