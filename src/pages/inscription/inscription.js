@@ -23,7 +23,7 @@ function Inscription (){
 
   const onSubmit=async (data)=>{
     console.log(data)
-    const response = await fetchWrapper.post("http://localhost:8080/api/users/inscription_email",data);
+    const response = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/users/inscription_email",data);
      if(response){
           navigate('/dashboard/utilisateurs')
       }
