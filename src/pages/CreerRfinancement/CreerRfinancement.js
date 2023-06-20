@@ -31,7 +31,7 @@ export default function CreerRfinancement() {
 useEffect( ()=>{ 
   console.log(id)
  const fecthData = async ()=>{ 
-    const data= await fetchWrapper.get(`http://localhost:8080/api/rechercheFinancement/voir/${id}`)
+    const data= await fetchWrapper.get(`https://astrainingbusiness-crud.onrender.com/api/rechercheFinancement/voir/${id}`)
     console.log(data)
     setData(data)
   }
