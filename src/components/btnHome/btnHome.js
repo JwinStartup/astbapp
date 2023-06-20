@@ -12,7 +12,7 @@ const BtnHome =()=>{
  
     return(
         <div >
-          <button onClick={()=>navigate("/dashboard/inscription")} className="button1">Je m'inscris </button > 
+      { /* <button onClick={()=>navigate("/dashboard/inscription")} className="button1">Je m'inscris </button > */}
            {user== null ?<div>   
      <button onClick={()=>navigate("/connexion")} className="button1">Je me connécte</button >
      </div> :<div>
