@@ -163,7 +163,7 @@ export default function Scpdf(){
 
   const {id} = useParams()
   const datating = async()=>{
-    const reponses = await fetchWrapper.get(`http://localhost:8080/api/strategieCom/voir/${id}`)
+    const reponses = await fetchWrapper.get(`https://astrainingbusiness-crud.onrender.com/api/strategieCom/voir/${id}`)
     if(reponses){
           setData(reponses)
           console.log(reponses)
