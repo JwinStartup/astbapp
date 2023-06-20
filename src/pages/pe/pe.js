@@ -19,7 +19,7 @@ export default function Pe() {
   const navigate = useNavigate()
     const {bid,id} = useParams()
   const methods=useForm({
- defaultValues: async ()=>await fetchWrapper.get(`http://localhost:8080/api/presententrepreneur/voir/${id}`) 
+ defaultValues: async ()=>await fetchWrapper.get(`https://astrainingbusiness-crud.onrender.com/api/presententrepreneur/voir/${id}`) 
   })
   const {fields,append,remove}=useFieldArray({
     control:methods.control,
@@ -28,7 +28,7 @@ export default function Pe() {
 
 
 const onSubmit= async d=>{
-  const response = await fetchWrapper.post("http://localhost:8080/api/presententrepreneur/modifie",d);
+  const response = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/presententrepreneur/modifie",d);
   /*if(response){
       navigate(`/projet/businessplan/${bid}`)
     }*/
