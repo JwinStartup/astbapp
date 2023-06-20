@@ -16,7 +16,7 @@ export default function ProjetById() {
     useEffect( ()=>{ 
         console.log(id)
        const fecthData = async ()=>{ 
-          const response= await fetchWrapper.post("http://localhost:8080/api/projet/voirById",{id:id});
+          const response= await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/projet/voirById",{id:id});
           setData(response)
           //setData(data)
           console.log(response)
