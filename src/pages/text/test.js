@@ -30,7 +30,7 @@ export default function Test() {
        const score = Object.values(p)
        const total= score.reduce((acc,valeur)=>acc+valeur)
      const {note,type,desc}= observation(total)
-     const fect = await fetchWrapper.post("http://localhost:8080/api/test/creer",{id_user:authUser.user.user._id , note:note , type:type})  
+     const fect = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/test/creer",{id_user:authUser.user.user._id , note:note , type:type})  
         setProfil({note:note,type:type,desc:desc})
         setUser(fect)
     }
