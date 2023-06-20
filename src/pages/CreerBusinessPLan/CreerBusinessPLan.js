@@ -33,7 +33,7 @@ export default function CreerBusinessPLan() {
 useEffect( ()=>{ 
   console.log(id)
  const fecthData = async ()=>{ 
-    const data= await fetchWrapper.post("http://localhost:8080/api/businessplan/voirbyId",{id:id});
+    const data= await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/businessplan/voirbyId",{id:id});
     console.log(data)
     setData(data)
   }
