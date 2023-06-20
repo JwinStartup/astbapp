@@ -28,10 +28,10 @@ import Fmenu from '../../components/fmenu/fmenu'
     const {id} = useParams()
     const navigate = useNavigate()
     const methods =useForm({
-      defaultValues:async ()=>await fetchWrapper.get(`http://localhost:8080/api/epargnePersonelle/voir/${id}`)})
+      defaultValues:async ()=>await fetchWrapper.get(`https://astrainingbusiness-crud.onrender.com/api/epargnePersonelle/voir/${id}`)})
         const onSubmit= async d=>{
             console.log(d)
-          const response = await fetchWrapper.post("http://localhost:8080/api/epargnePersonelle/modifie",d);
+          const response = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/epargnePersonelle/modifie",d);
            // navigate(`/projet/${id}/projet/businessplan`)
       
       // console.log(response)
