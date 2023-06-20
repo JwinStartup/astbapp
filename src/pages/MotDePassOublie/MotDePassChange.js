@@ -18,7 +18,7 @@ const authUser = useSelector(x => x.auth)
   const methods =useForm({})
   const onSubmit= async d=>{
     console.log(d)
-      const response = await fetchWrapper.post("http://localhost:8080/api/users/motdepassechange",{mouveau_mot2pass:d.nouveau,id:authUser.user.user._id});
+      const response = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/users/motdepassechange",{mouveau_mot2pass:d.nouveau,id:authUser.user.user._id});
      if(response){ 
       navigate(-1)
      } 
