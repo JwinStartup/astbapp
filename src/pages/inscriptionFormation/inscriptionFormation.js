@@ -14,14 +14,14 @@ export default function InscriptionFormation() {
   const {id }=useParams()
   const authUser = useSelector(x => x.auth)
   const methods =useForm({
- defaultValues: async ()=>await fetchWrapper.get(`http://localhost:8080/api/users/voir/${id}`)
+ defaultValues: async ()=>await fetchWrapper.get(`https://astrainingbusiness-crud.onrender.com/api/users/voir/${id}`)
  //.then((d)=>console.log(d)) 
   })
   const navigate = useNavigate()
  
    const onSubmit= async d=>{
           console.log(d)
-          const response = await fetchWrapper.post("http://localhost:8080/api/users/modifie",d);
+          const response = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/users/modifie",d);
        console.log(response)
        if(response){
         navigate(-1)
