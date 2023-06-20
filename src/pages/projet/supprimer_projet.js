@@ -15,7 +15,7 @@ const authUser = useSelector(x => x.auth)
   const methods =useForm({ })
   const onSubmit= async d=>{
     console.log(d)
-    const response = await fetchWrapper.post("http://localhost:8080/api/projet/modifie",d);
+    const response = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/projet/modifie",d);
     navigate(-1)
   }
 // console.log(response)
