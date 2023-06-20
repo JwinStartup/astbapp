@@ -36,7 +36,7 @@ export default function Profil (){
   }
 
   const getUtilisateurByid= async() =>{
-    const response = await fetchWrapper.get( `http://localhost:8080/api/users/voir/${id}`);
+    const response = await fetchWrapper.get( `https://astrainingbusiness-crud.onrender.com/api/users/voir/${id}`);
     console.log(response)
     setUser(response)
    
