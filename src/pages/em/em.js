@@ -55,10 +55,10 @@ const [loading,setLoading]= useState(false)
 const {bid,id} = useParams()
   const navigate = useNavigate()
 const methods =useForm({
-  defaultValues:async ()=>await fetchWrapper.get(`http://localhost:8080/api/etudeMarche/voir/${id}`)})
+  defaultValues:async ()=>await fetchWrapper.get(`https://astrainingbusiness-crud.onrender.com/api/etudeMarche/voir/${id}`)})
 const onSubmit= async d=>{
   console.log(d)
-  const response = await fetchWrapper.post("http://localhost:8080/api/etudeMarche/modifie",d); 
+  const response = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/etudeMarche/modifie",d); 
   if(response){
     setLoading(false)
     navigate(`/projet/businessplan/${bid}`)
