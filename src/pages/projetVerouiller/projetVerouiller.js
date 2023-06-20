@@ -28,7 +28,7 @@ const ProjetVerouiller=()=> {
   }
   const onSubmit=async (data)=>{
     console.log(data)
-    const response = await fetchWrapper.post("http://localhost:8080/api/projet/deverouiller",{
+    const response = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/projet/deverouiller",{
       id_projet: id,
       codeDeverouillage:data.code_projet,
      });
