@@ -33,7 +33,7 @@ const CreerProjet=()=> {
   }
   const onSubmit=async (data)=>{
     console.log(data)
-    const response = await fetchWrapper.post("http://localhost:8080/api/projet/creer",{
+    const response = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/projet/creer",{
       id_user: authUser.user.user._id,
       nom_projet:data.nom_projet,
       slogan:data.slogan,
