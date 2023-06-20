@@ -26,7 +26,7 @@ import { ThreeDots } from 'react-loader-spinner'
 
   export default function Pfp (){
     const navigate = useNavigate()
-    const methods =useForm({defaultValues: async ()=>await fetchWrapper.get(`http://localhost:8080/api/pfp/voir/${id}`)})
+    const methods =useForm({defaultValues: async ()=>await fetchWrapper.get(`https://astrainingbusiness-crud.onrender.com/api/pfp/voir/${id}`)})
     const [loading,setLoading]= useState(false)
     const {bid,id} = useParams()
     useEffect(()=>{
@@ -38,7 +38,7 @@ import { ThreeDots } from 'react-loader-spinner'
         const onSubmit= async d=>{
              setLoading(true)
             console.log(d)
-           const response = await fetchWrapper.post("http://localhost:8080/api/pfp/modifie",d);
+           const response = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/pfp/modifie",d);
            // navigate(`/projet/${id}/businessplan')
            console.log(response)
            if(response){
