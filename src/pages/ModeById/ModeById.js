@@ -47,7 +47,7 @@ import { useSelector } from 'react-redux'
      
         const onSubmit= async d=>{
             console.log(d)
-           const response = await fetchWrapper.post("http://localhost:8080/api/mode/creer",d);
+           const response = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/mode/creer",d);
            if(response.aChoisirMode==true){
                navigate(`/projet/rFinancement/${response.rechercheFinancement}`)
            }
