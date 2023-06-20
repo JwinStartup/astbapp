@@ -26,14 +26,14 @@ function Projet() {
     const [loading,setLoading] = useState(false)
     const [listeProjet,setListeProjet]= useState([])
    const  getProjet=async ()=>{
-     const response = await fetchWrapper.post("http://localhost:8080/api/projet/voir",{
+     const response = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/projet/voir",{
       userId: user.user._id,
     });
      setListeProjet([...listeProjet,response])
      setLoading(false)
    }
    const onDelete=async(p)=>{
-    const response = await fetchWrapper.delete(`http://localhost:8080/api/projet/delete`,{id:p})
+    const response = await fetchWrapper.delete(`https://astrainingbusiness-crud.onrender.com/api/projet/delete`,{id:p})
     navigate('/')
   }
   useEffect(() => {
