@@ -37,7 +37,7 @@ function authHeader(url) {
     // return auth header with jwt if user is logged in and request is to the api url
     const token = authToken();
     const isLoggedIn = !!token;
-    const isApiUrl = url.startsWith('http://localhost:8080/');
+    const isApiUrl = url.startsWith('https://astrainingbusiness-crud.onrender.com');
     console.log(token,isApiUrl)
     if (isLoggedIn && isApiUrl) {
         return { Authorization: `astraining ${token}` };
