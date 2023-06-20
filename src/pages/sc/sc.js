@@ -25,12 +25,12 @@ function Sc (){
   const [loading,setLoading]= useState(false)
   const {bid,id} = useParams()
 const methods=useForm({
-  defaultValues:async ()=>await fetchWrapper.get(`http://localhost:8080/api/strategieCom/voir/${id}`) || initialSc
+  defaultValues:async ()=>await fetchWrapper.get(`https://astrainingbusiness-crud.onrender.com/api/strategieCom/voir/${id}`) || initialSc
   })
  
   const onSubmit= async d=>{
       console.log(d)
-      const response = await fetchWrapper.post("http://localhost:8080/api/strategieCom/modifie",d); 
+      const response = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/strategieCom/modifie",d); 
       if(response){
         setLoading(false)
         navigate(`/projet/businessplan/${bid}`)
