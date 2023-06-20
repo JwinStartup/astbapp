@@ -35,7 +35,7 @@
            })
                const onSubmit= async d=>{
                    console.log(d)
-                const response = await fetchWrapper.post("http://localhost:8080/api/pret/modifie",d);
+                const response = await fetchWrapper.post("https://astrainingbusiness-crud.onrender.com/api/pret/modifie",d);
                }
        
                console.log(methods.watch())
