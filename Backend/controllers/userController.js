@@ -63,9 +63,9 @@ const ajoutUserParEmail= async(req,res,next)=>{
           res.send("L'email a deja étè utilisé,Veuillez utiliser un autre")
       }
       const hashedpassword= await bcrypt.hash(req.body.password,12);
-       
+       const numeroNouveau= await Utilisateur.length + 00000
       var user = await new Utilisateur({
-              nom_utilisateur:'Ast_001',
+              nom_utilisateur:`Ast_${numeroNouveau}`,
               email:req.body.email,
               sexe:req.body.sexe,   
               password:hashedpassword,
