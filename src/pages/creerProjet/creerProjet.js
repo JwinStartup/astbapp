@@ -24,9 +24,11 @@ const CreerProjet=()=> {
 
   const [verrouProjet,setVerrouProjet]=useState(false)
    // const {navigate }= useNavigate()
-    const suivantProjet=()=>{
-       
-    }
+         const codeProjet=(min,max)=>{
+           let randomNumber= crypto.getRandomValues(new Uint32Array(1))[0]
+           randomNumber= randomNumber/4294967296
+           return Math.floor(randomNumber * (max - min + 1)) + min
+         }
     const retourneVerrou =(e)=>{
       e.preventDefault()
       setVerrouProjet(false)
@@ -37,6 +39,7 @@ const CreerProjet=()=> {
       id_user: authUser.user.user._id,
       nom_projet:data.nom_projet,
       slogan:data.slogan,
+       code:codeProjet(1000,9999)
      });
      console.log(response._id)
      navigate(  `/projet/${response._id}/verouiller`  )
