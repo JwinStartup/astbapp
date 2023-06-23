@@ -99,7 +99,7 @@ var rechercheFinancement = await new RechercheFinancement({
     var projet = await new Projet({
             nom_projet:req.body.nom_projet,
             slogan:req.body.slogan,
-            code:225,
+            code:req.body.code,
             verrou:true,
             aChoisirMode:false,
             creerPar:req.body.id_user,
