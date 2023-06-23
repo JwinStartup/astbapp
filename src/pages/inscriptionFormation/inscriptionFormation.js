@@ -43,7 +43,7 @@ export default function InscriptionFormation() {
                    <form className="inscriptionForm" autoComplete='off' onSubmit={methods.handleSubmit(onSubmit)}>
                  <div style={{width:"100px",position:"relative",margin:"auto"}}> 
                    <FaUserCircle size={100} className="faUser"/>
-                   <div style={{position:"absolute",bottom:"0px",right:"0px",background:"#00B4FF",width:"32px",height:"32px",textAlign:"center",lineHeight:"33px",overflow:"hidden",borderRadius:"50%"}}>
+                   <div style={{position:"absolute",bottom:"0px",right:"0px",background:"#9CCBF2",width:"32px",height:"32px",textAlign:"center",lineHeight:"33px",overflow:"hidden",borderRadius:"50%"}}>
                     <input type="file" {...methods.register('photo')} style={{position:"absolute",transform:"scale(2)",opacity:"0" }}/>
                      <FaCamera size={20}/>
                   </div>
