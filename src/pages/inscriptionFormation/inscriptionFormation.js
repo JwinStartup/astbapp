@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Entete from '../../components/Entete/entete'
-import {FaUserCircle} from "react-icons/fa"
+import {FaUserCircle,FaCamera} from "react-icons/fa"
 import {BsFillPlusCircleFill} from "react-icons/bs"
 import "./inscriptionFormation.css"
 import {  useNavigate, useParams } from 'react-router-dom'
@@ -41,9 +41,12 @@ export default function InscriptionFormation() {
             <div className="basinscriptionForm">
                   
                    <form className="inscriptionForm" autoComplete='off' onSubmit={methods.handleSubmit(onSubmit)}>
-                 <div> 
+                 <div style={{width:"100px",position:"relative",margin:"auto"}}> 
                    <FaUserCircle size={100} className="faUser"/>
-                   <BsFillPlusCircleFill size={20} className="bsFill"/>
+                   <div style={{position:"absolute",bottom:"0px",right:"0px",background:"#00B4FF",width:"32px",height:"32px",lineHeight:"33px",overflow:"hidden",borderRadius:"50%"}}>
+                    <input type:"file" style={{position:"absolute",transform:"scale(2)",opacity:"0" }}/>
+                     <FaCamera size={25}/>
+                  </div>
                  </div>
                     <div className="nom_prenom" style={{display:"flex",flexDirection:'row'}}>
                    <div  className="nomForm">
