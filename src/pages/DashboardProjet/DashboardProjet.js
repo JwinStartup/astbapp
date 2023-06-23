@@ -68,7 +68,7 @@ return (
             }}>
              <div> Projet <br/> {`<< ${u.nom_projet} >>`} </div>
              <div>slogan <br/><i style={{fontSize:'13px'}}> {`<< ${u.slogan} >>`}</i ></div>
-             <div>slogan : <i style={{fontSize:'13px',color:'red'}}> {`<< ${u.code} >>`}</i ></div>
+             <div>code : <i style={{fontSize:'13px',color:'red'}}> {`<< ${u.code} >>`}</i ></div>
              <div>Logo <br/></div>
              <div> Par <br/>
              {/*  <div>{u.creerPar.nom} {u.creerPar.prenom}</div>*/}
