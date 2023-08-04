@@ -26,7 +26,7 @@ const Entete =()=>{
       <li>
         {authUser.user!= null &&<Link style={{textDecoration:/^\/projet/.test(location.pathname)==true  && 'underline 2px double #9ccbf2'}}  to="/projet">Projet</Link>}
       </li>
-      <li><Link  style={{textDecoration:/^\/apropos/.test(location.pathname)==true  && 'underline 2px double #9ccbf2'}} to="/apropos">Apropos</Link></li>
+      <li><Link  style={{textDecoration:/^\/apropos/.test(location.pathname)==true  && 'underline 2px double #9ccbf2'}} to="/apropos">A propos</Link></li>
       
         {authUser.user== null ?
         <li className="btnCon"><Link to="/connexion">Connectez-vous</Link></li>:
