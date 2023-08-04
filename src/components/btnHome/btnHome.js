@@ -14,7 +14,7 @@ const BtnHome =()=>{
         <div >
       { /* <button onClick={()=>navigate("/dashboard/inscription")} className="button1">Je m'inscris </button > */}
            {user== null ?<div>   
-     <button onClick={()=>navigate("/connexion")} className="button1">Je me connécte</button >
+     <button onClick={()=>navigate("/connexion")} className="button1">Je me connecte</button >
      </div> :<div>
      {user.user.estTeste == false ? <button onClick={()=>navigate("/test")} className="button2">Je passe mon test du profil d'entrepeneur</button>:<button onClick={()=>navigate(`/projet/creer`)} className="button3">Je cree un nouveau projet</button>}
       </div>}
