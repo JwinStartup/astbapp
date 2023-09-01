@@ -20,7 +20,7 @@ export default function Test() {
   const authUser = useSelector(x => x.auth)
   const navigate = useNavigate()
   const methods=useForm({})
-  const [profil,setProfil]=useState()
+  const [profil,setProfil]=useState(null)
   const [user,setUser]=useState(null)
     const [reponse,setReponse]= useState({})
     const [compteur,setCompteur]= useState(0)
@@ -77,9 +77,9 @@ export default function Test() {
         <BtnRetourComponent libelle={'Retour'} navigateur={()=>navigate('/')}/>
          <div><h3 style={{margin:'1px',color:"GrayText"}}>Passer le test entrepeneur</h3> <spam style={{fontStyle:'italic',color:'red'}}>{25-compteur} question(s) à repondre </spam></div>
 
-   {profil!= undefined&&<div>
+   {profil!= null&&<div>
     <Backdrop/>
-    <Profiltest note={profil.note} type={profil.type} desc={profil.desc} user={user} />
+    <Profiltest note={profil.note} type={profil.type} desc={profil.desc} user={user} retourne={()=>setProfil(null) } />
     </div>}
   <div style={{display: 'flex',flexDirection: 'column',alignItems: 'center',height:'550px',overflow:'auto'}}>
   
