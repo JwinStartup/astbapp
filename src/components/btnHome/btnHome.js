@@ -20,7 +20,7 @@ const BtnHome = () => {
         </div>
       ) : (
         <div>
-          {user.user.estTeste == false ? (
+          {user.estTeste == false ? (
             <button onClick={() => navigate("/test")} className="button2">
               Je passe mon test du profil d'entrepeneur
             </button>

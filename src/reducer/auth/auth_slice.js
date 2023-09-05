@@ -22,6 +22,7 @@ function createInitialState() {
     // initialize state from local storage to enable user to stay logged in
     user: JSON.parse(localStorage.getItem("user")),
     error: null,
+    estTeste: JSON.parse(localStorage.getItem("user")).estTeste,
   };
 }
 
@@ -104,10 +105,10 @@ function createExtraReducers() {
         state.error = null;
       },
       [fulfilled]: (state, action) => {
-        const user = action.payload;
+        // const user = action.payload;
         // store user details and jwt token in local storage to keep user logged in between page refreshes
         // localStorage.setItem("user", JSON.stringify(user));
-        state.user = user;
+        state.estTeste = true;
       },
       [rejected]: (state, action) => {
         state.error = action.error;
