@@ -9,12 +9,12 @@ import { FaUserCircle } from "react-icons/fa";
 const Entete = () => {
   const location = useLocation();
   const dispatch = useDispatch();
-  const authUser = useSelector((x) => x.auth);
+  const { auth } = useSelector((state) => state);
   const onSubmit = (e) => {
     e.preventDefault();
     return dispatch(authActions.logout());
   };
-  console.log(location.pathname);
+  console.log(auth);
   return (
     <div>
       <nav className="entete">
@@ -24,9 +24,9 @@ const Entete = () => {
           </Link>{" "}
         </div>
         <ul>
-          {authUser.user != null && (
+          {auth.user != null && (
             <li>
-              {authUser.user.user.typeUser == "admin" && (
+              {auth.user.user.typeUser == "admin" && (
                 <Link
                   style={{
                     textDecoration:
@@ -41,7 +41,7 @@ const Entete = () => {
             </li>
           )}
           <li>
-            {authUser.user != null && (
+            {auth.user != null && (
               <Link
                 style={{
                   textDecoration:
@@ -67,7 +67,7 @@ const Entete = () => {
             </Link>
           </li>
 
-          {authUser.user == null ? (
+          {auth.user == null ? (
             <li className="btnCon">
               <Link to="/connexion">Connectez-vous</Link>
             </li>
@@ -77,24 +77,24 @@ const Entete = () => {
                 <li>
                   <a>
                     <FaUserCircle size={40} color={"gray"} className="faUser" />
-                    {authUser.user.user.nom == undefined ? (
+                    {auth.user.user.nom == undefined ? (
                       <p className="nomProfile">
-                        {authUser.user.user.nom_utilisateur}
+                        {auth.user.user.nom_utilisateur}
                       </p>
                     ) : (
                       <p className="nomProfile">
-                        {authUser.user.user.nom} {authUser.user.user.prenom}{" "}
+                        {auth.user.user.nom} {auth.user.user.prenom}{" "}
                       </p>
                     )}
                   </a>
 
                   <ul className="sous-menu">
                     <li>
-                      <Link to={`/profil/${authUser.user.user._id}`}>
+                      <Link to={`/profil/${auth.user.user._id}`}>
                         Voir profil
                       </Link>
                     </li>
-                    {authUser.user != null && (
+                    {auth.user != null && (
                       <li
                         style={{
                           border: "1px solid red",

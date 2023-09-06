@@ -125,8 +125,7 @@ const tester = async (req, res, next) => {
     const u = await Utilisateur.findByIdAndUpdate(req.body.id_user, {
       test: testEnt,
       estTeste: true,
-    });
-    res.json(u);
+    }).then((u) => res.json(u.estTeste));
   } catch (error) {
     res.json(error);
   }

@@ -49,10 +49,10 @@ function authToken() {
 }
 
 function handleResponse(response) {
-  console.log(response);
+  // console.log(response);
   return response.text().then((text) => {
     const data = JSON.parse(text) || text;
-    console.log(data);
+    // console.log(data);
 
     if (!response.ok) {
       if ([401, 403].includes(response.status) && authToken()) {
@@ -61,8 +61,8 @@ function handleResponse(response) {
         logout();
       }
 
-      //   const error = (data && data.message) || response.statusText;
-      // return Promise.reject(error);
+      const error = (data && data.message) || response.statusText;
+      return Promise.reject(error);
     }
 
     return data;

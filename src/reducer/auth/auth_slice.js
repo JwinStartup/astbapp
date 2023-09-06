@@ -20,9 +20,10 @@ export const authReducer = slice.reducer;
 function createInitialState() {
   return {
     // initialize state from local storage to enable user to stay logged in
-    user: JSON.parse(localStorage.getItem("user")),
+    user: null,
     error: null,
-    estTeste: JSON.parse(localStorage.getItem("user")).estTeste,
+    estTeste: false,
+    isLoader: false,
   };
 }
 
@@ -79,9 +80,12 @@ function createExtraReducers() {
     var { pending, fulfilled, rejected } = extraActions.login;
     return {
       [pending]: (state) => {
+        state.isLoader = true;
+
         state.error = null;
       },
       [fulfilled]: (state, action) => {
+        state.isLoader = false;
         const user = action.payload;
 
         // store user details and jwt token in local storage to keep user logged in between page refreshes
@@ -93,6 +97,8 @@ function createExtraReducers() {
         history.navigate(from);
       },
       [rejected]: (state, action) => {
+        state.isLoader = false;
+
         state.error = action.error;
       },
     };
@@ -102,15 +108,21 @@ function createExtraReducers() {
     var { pending, fulfilled, rejected } = extraActions.estTeste;
     return {
       [pending]: (state) => {
+        state.isLoader = true;
+
         state.error = null;
       },
       [fulfilled]: (state, action) => {
-        // const user = action.payload;
+        state.isLoader = false;
+
+        const estTeste = action.payload;
         // store user details and jwt token in local storage to keep user logged in between page refreshes
         // localStorage.setItem("user", JSON.stringify(user));
-        state.estTeste = true;
+        state.estTeste = estTeste;
       },
       [rejected]: (state, action) => {
+        state.isLoader = false;
+
         state.error = action.error;
       },
     };
