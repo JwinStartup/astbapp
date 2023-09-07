@@ -22,17 +22,33 @@ const BtnHome = () => {
         <div>
           {auth.isLoader == false && (
             <div>
-              {auth.user?.user.estTeste === false ? (
-                <button onClick={() => navigate("/test")} className="button2">
-                  Je passe mon test du profil d'entrepeneur
-                </button>
+              {auth.estTeste === false ? (
+                <div>
+                  {auth.user.user.estTeste === false ? (
+                    <button
+                      onClick={() => navigate("/test")}
+                      className="button2"
+                    >
+                      Je passe mon test du profil d'entrepeneur
+                    </button>
+                  ) : (
+                    <button
+                      onClick={() => navigate(`/projet/creer`)}
+                      className="button3"
+                    >
+                      Je cree un nouveau projet
+                    </button>
+                  )}
+                </div>
               ) : (
-                <button
-                  onClick={() => navigate(`/projet/creer`)}
-                  className="button3"
-                >
-                  Je cree un nouveau projet
-                </button>
+                <div>
+                  <button
+                    onClick={() => navigate(`/projet/creer`)}
+                    className="button3"
+                  >
+                    Je cree un nouveau projet
+                  </button>
+                </div>
               )}
             </div>
           )}

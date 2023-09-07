@@ -49,16 +49,21 @@ function authToken() {
 }
 
 function handleResponse(response) {
-  // console.log(response);
+  console.log(response);
   return response.text().then((text) => {
     const data = JSON.parse(text) || text;
-    // console.log(data);
+    console.log("salut", data);
 
     if (!response.ok) {
       if ([401, 403].includes(response.status) && authToken()) {
         // auto logout if 401 Unauthorized or 403 Forbidden response returned from api
         const logout = () => store.dispatch(authActions.logout());
         logout();
+      }
+      if ([400].includes(response.status) && authToken()) {
+        // auto logout if 401 Unauthorized or 403 Forbidden response returned from api
+        const home = () => history.navigate("/");
+        home();
       }
 
       const error = (data && data.message) || response.statusText;

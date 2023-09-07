@@ -81,7 +81,6 @@ function createExtraReducers() {
     return {
       [pending]: (state) => {
         state.isLoader = true;
-
         state.error = null;
       },
       [fulfilled]: (state, action) => {
@@ -98,7 +97,6 @@ function createExtraReducers() {
       },
       [rejected]: (state, action) => {
         state.isLoader = false;
-
         state.error = action.error;
       },
     };
@@ -109,20 +107,17 @@ function createExtraReducers() {
     return {
       [pending]: (state) => {
         state.isLoader = true;
-
         state.error = null;
       },
       [fulfilled]: (state, action) => {
         state.isLoader = false;
-
-        const estTeste = action.payload;
+        // const estTeste = action.payload;
         // store user details and jwt token in local storage to keep user logged in between page refreshes
         // localStorage.setItem("user", JSON.stringify(user));
-        state.estTeste = estTeste;
+        state.estTeste = true;
       },
       [rejected]: (state, action) => {
         state.isLoader = false;
-
         state.error = action.error;
       },
     };

@@ -31,6 +31,7 @@ function Projet() {
         userId: auth.user.user._id,
       }
     );
+    console.log(response);
     setListeProjet([...listeProjet, response]);
     setLoading(false);
   };
@@ -44,7 +45,7 @@ function Projet() {
   useEffect(() => {
     setLoading(true);
     setListeProjet([...listeProjet, tab]);
-    console.log(auth.user.user._id);
+    console.log(auth);
     setTimeout(() => {
       getProjet();
     }, 1000);
